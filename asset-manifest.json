@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/SimpleProgressTracker/static/js/main.b26687ae.chunk.js",
-    "main.js.map": "/SimpleProgressTracker/static/js/main.b26687ae.chunk.js.map",
+    "main.js": "/SimpleProgressTracker/static/js/main.9317fad4.chunk.js",
+    "main.js.map": "/SimpleProgressTracker/static/js/main.9317fad4.chunk.js.map",
     "runtime-main.js": "/SimpleProgressTracker/static/js/runtime-main.adb2f4ed.js",
     "runtime-main.js.map": "/SimpleProgressTracker/static/js/runtime-main.adb2f4ed.js.map",
     "static/js/2.39889302.chunk.js": "/SimpleProgressTracker/static/js/2.39889302.chunk.js",
     "static/js/2.39889302.chunk.js.map": "/SimpleProgressTracker/static/js/2.39889302.chunk.js.map",
     "index.html": "/SimpleProgressTracker/index.html",
-    "precache-manifest.fdc801fb7159a770d871335f4ce3dc47.js": "/SimpleProgressTracker/precache-manifest.fdc801fb7159a770d871335f4ce3dc47.js",
+    "precache-manifest.0eb377ee006bebac12f8854654899189.js": "/SimpleProgressTracker/precache-manifest.0eb377ee006bebac12f8854654899189.js",
     "service-worker.js": "/SimpleProgressTracker/service-worker.js",
     "static/js/2.39889302.chunk.js.LICENSE": "/SimpleProgressTracker/static/js/2.39889302.chunk.js.LICENSE"
   },
   "entrypoints": [
     "static/js/runtime-main.adb2f4ed.js",
     "static/js/2.39889302.chunk.js",
-    "static/js/main.b26687ae.chunk.js"
+    "static/js/main.9317fad4.chunk.js"
   ]
 }
