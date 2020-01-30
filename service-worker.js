@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/SimpleProgressTracker/precache-manifest.0eb377ee006bebac12f8854654899189.js"
+  "/SimpleProgressTracker/precache-manifest.e55b57711c09064fdca0840c631db0eb.js"
 );
 
 self.addEventListener('message', (event) => {
