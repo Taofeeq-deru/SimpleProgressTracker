@@ -24,7 +24,19 @@ function App() {
     setTodos(newTodos)
   }
 
+  function deleteTodo(id) {
+    const newTodos = [...todos];
+    const todo = newTodos.find(todo => todo.id === id);
+    console.log(todo.id);
+    const index = newTodos.indexOf(todo);
+    newTodos.splice(index, 1)
+    setTodos(newTodos);
+
+    (document.querySelector('#taskInput')).focus()
+  }
+
   function handleAddTodo(e) {
+    e.preventDefault();
     const name = todoNameRef.current.value;
     if (name === '') return
     console.log(name);
@@ -36,6 +48,8 @@ function App() {
       }]
     })
     todoNameRef.current.value = null;
+
+    (document.querySelector('#taskInput')).focus()
   }
 
   function handleClearTodos() {
@@ -50,16 +64,21 @@ function App() {
       percentDone = `Add tasks`;
     } else{
       let percent = ((todos.filter(todo => todo.complete).length) / todos.length) * 100;
-      percentDone = `${percent}% done`
+      let thePercent = roundToTwo(percent);
+      percentDone = `${thePercent}% done`
     }
     return percentDone;
+  }
+
+  function roundToTwo(num) {    
+    return +(Math.round(num + "e+2")  + "e-2");
   }
 
   return (
     <div>
       <h3 className="text-center text-dark my-3">Hi, let's help you track your task progress...</h3>
       <div className="border border-secondary rounded p-5">
-        <TodoList todos={todos}  toggleTodo={toggleTodo} />
+        <TodoList todos={todos}  toggleTodo={toggleTodo} deleteTodo={deleteTodo} />
         <form className="form-inline">
           <input className="form-control mx-1 my-2" ref={todoNameRef} type="text" id="taskInput"/>
           <button className="btn btn-primary mx-1 my-2" onClick={handleAddTodo}>Add Todo</button>
