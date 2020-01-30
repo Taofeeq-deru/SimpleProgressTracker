@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4add2da2c11dbdebd92358aab511a8e4",
+    "revision": "4b98ae8fff197e0edb2e64aae0d8823d",
     "url": "/SimpleProgressTracker/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/SimpleProgressTracker/static/js/2.39889302.chunk.js.LICENSE"
   },
   {
-    "revision": "73b42a090e2bca8ef180",
-    "url": "/SimpleProgressTracker/static/js/main.971bf20a.chunk.js"
+    "revision": "f84e4621dc70bf8d561d",
+    "url": "/SimpleProgressTracker/static/js/main.1bf5a4d5.chunk.js"
   },
   {
     "revision": "185d5bc537b77e047647",
