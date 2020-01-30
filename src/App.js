@@ -36,7 +36,8 @@ function App() {
   }
 
   function handleAddTodo(e) {
-    e.preventDefault();
+    const add = document.querySelector('#add');
+    add.classList.add("spinner-border", "spinner-border-sm");
     const name = todoNameRef.current.value;
     if (name === '') return
     console.log(name);
@@ -53,6 +54,8 @@ function App() {
   }
 
   function handleClearTodos() {
+    const clear = document.querySelector('#clear');
+    clear.classList.add("spinner-border", "spinner-border-sm");
     let newTodos = [...todos];
     newTodos.length = 0;
     setTodos(newTodos)
@@ -79,10 +82,10 @@ function App() {
       <h3 className="text-center text-dark my-3">Hi, let's help you track your task progress...</h3>
       <div className="border border-secondary rounded p-5">
         <TodoList todos={todos}  toggleTodo={toggleTodo} deleteTodo={deleteTodo} />
-        <form className="form-inline">
+        <form className="form-inline justify-content-center">
           <input className="form-control mx-1 my-2" ref={todoNameRef} type="text" id="taskInput"/>
-          <button className="btn btn-primary mx-1 my-2" onClick={handleAddTodo}>Add Todo</button>
-          <button className="btn btn-danger mx-1 my-2" onClick={handleClearTodos}>Clear All</button>
+          <button className="btn btn-primary mx-1 my-2" onClick={handleAddTodo}><span id="add"></span> Add Todo</button>
+          <button className="btn btn-danger mx-1 my-2" onClick={handleClearTodos}><span id="clear"></span> Clear All</button>
         </form>
         <div className="w-100 bg-success text-light text-center form-control font-weight-bold my-1">
           <PercentageDone percentDone={PercentageDone}/>
